@@ -1,22 +1,28 @@
 import React from 'react';
-import logo from '../../logo.svg';
+import logo from '../../logo.png';
+import { NavLink } from 'react-router-dom';
 import './navbar.scss';
 const navbar = () => {
     return (
-       <nav className="navbar">
-            <img src={logo} alt="company logo"/>
+        <nav className="navbar bg-dark">
+            <img src={logo} alt="company logo" />
             <ul className="nav-links">
-                <li><a href="/" className="nav-link">
+                <li><NavLink className="nav-link" to="/" >
                     Home
-                </a></li>
-                <li><a href="/" className="nav-link active">
-                    Tours
-                </a></li>
-                <li><a href="/" className="nav-link">
-                    About
-                </a></li>
+                </NavLink>
+                </li>
+                <li>
+                    <NavLink className="nav-link" to="/tours" >
+                       My Tours
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className="nav-link" to="/checkout" >
+                        Checkout
+                </NavLink>
+                </li>
             </ul>
-       </nav>
+        </nav>
     );
 }
 

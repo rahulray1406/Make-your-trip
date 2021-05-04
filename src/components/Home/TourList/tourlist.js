@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Tour from '../Tour/Tour';
+import Tour from '../../Tour/Tour';
 import './tourlist.scss';
-import { tourData } from '../../tourData';
+import { tourData } from '../../../tourData';
 class Tourlist extends Component {
     state = {
         tours: tourData
@@ -17,6 +17,7 @@ class Tourlist extends Component {
         const { tours } = this.state;
         return (
             <section className="tour-list">
+                <h6 className="lead display-4">Tour List</h6>
                 {tours.map(tour => (
                     <Tour key={tour.id} tour={tour} removeTourHandler={this.removeTourHandler} />
                 ))}

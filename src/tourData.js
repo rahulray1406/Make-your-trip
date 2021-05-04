@@ -21,7 +21,7 @@ export const tourData = [
     img: "./img/london.jpeg",
     name: "london royal palace tour",
     info:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, nam omnis error corrupti eum assumenda enim odit architecto corporis. Sequi"
+    "Select this holiday, which will take you through the imperial beauty of Paris, London’s historic avenues, and the natural splendors of Switzerland." 
   },
   {
     id: 4,
